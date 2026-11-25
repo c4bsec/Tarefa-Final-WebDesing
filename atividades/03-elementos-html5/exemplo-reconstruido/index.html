@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Exemplo didático dos principais elementos do HTML5.">
+    <title>Laboratório de elementos HTML5</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="cabecalho">
+      <div>
+        <p class="sobrelinha">Web Design · HTML5</p>
+        <h1>Laboratório de elementos</h1>
+        <p>Uma página compacta para revisar semântica, mídia, formulários, listas e tabelas.</p>
+      </div>
+      <button type="button" class="tema" data-tema aria-pressed="false">Alto contraste</button>
+    </header>
+
+    <nav class="navegacao" aria-label="Navegação principal">
+      <a href="#imagens">Imagens</a>
+      <a href="#midia">Mídia</a>
+      <a href="#formulario">Formulário</a>
+      <a href="#dados">Listas e tabela</a>
+    </nav>
+
+    <main id="conteudo">
+      <section class="introducao" aria-labelledby="titulo-introducao">
+        <div>
+          <p class="sobrelinha">Introdução</p>
+          <h2 id="titulo-introducao">O significado vem antes da aparência</h2>
+          <p id="introducao">
+            Elementos semânticos ajudam navegadores, mecanismos de busca e tecnologias
+            assistivas a compreender a organização do conteúdo.
+          </p>
+        </div>
+        <aside>
+          <strong>Regra de ouro</strong>
+          <p>Escolha a tag pelo significado; use CSS para decidir a aparência.</p>
+        </aside>
+      </section>
+
+      <section id="imagens" aria-labelledby="titulo-imagens">
+        <p class="sobrelinha">Figure e figcaption</p>
+        <h2 id="titulo-imagens">Imagens com contexto</h2>
+        <div class="grade-imagens">
+          <figure>
+            <img src="assets/estrutura.svg" alt="Blocos coloridos representando a estrutura de uma página HTML.">
+            <figcaption>Estrutura: cabeçalho, conteúdo principal e rodapé.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/acessibilidade.svg" alt="Cursor de teclado ao lado de um indicador de foco visível.">
+            <figcaption>Acessibilidade: foco, rótulos e texto alternativo.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="midia" aria-labelledby="titulo-midia">
+        <p class="sobrelinha">Audio e video</p>
+        <h2 id="titulo-midia">Mídia incorporada</h2>
+        <div class="grade-midia">
+          <article>
+            <h3>Áudio sintético</h3>
+            <audio controls preload="metadata">
+              <source src="assets/tom-sintetico.wav" type="audio/wav">
+              Seu navegador não oferece suporte ao elemento de áudio.
+            </audio>
+            <p>Tom curto gerado para esta demonstração, sem material de terceiros.</p>
+          </article>
+          <article>
+            <h3>Marcação de vídeo</h3>
+            <video controls preload="none" poster="assets/poster-video.svg" aria-describedby="nota-video">
+              Seu navegador não oferece suporte ao elemento de vídeo.
+            </video>
+            <p id="nota-video">O vídeo comercial do original foi omitido. O pôster mantém o exemplo seguro para publicação.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="formulario" aria-labelledby="titulo-formulario">
+        <p class="sobrelinha">Formulário</p>
+        <h2 id="titulo-formulario">Contato de demonstração</h2>
+        <form data-formulario novalidate>
+          <div class="campos">
+            <label>
+              Nome
+              <input name="nome" autocomplete="name" required minlength="2">
+            </label>
+            <label>
+              E-mail
+              <input name="email" type="email" autocomplete="email" required>
+            </label>
+          </div>
+          <label>
+            Mensagem
+            <textarea name="mensagem" rows="5" required minlength="10"></textarea>
+          </label>
+          <button type="submit">Validar mensagem</button>
+          <p class="retorno" data-retorno aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section id="dados" aria-labelledby="titulo-dados">
+        <p class="sobrelinha">Listas e tabela</p>
+        <h2 id="titulo-dados">Resumo dos elementos</h2>
+        <div class="grade-dados">
+          <article>
+            <h3>Checklist</h3>
+            <ul>
+              <li>Semântica coerente</li>
+              <li>Navegação por teclado</li>
+              <li>Textos alternativos</li>
+              <li>Campos identificados</li>
+            </ul>
+          </article>
+          <div class="tabela-wrapper" tabindex="0" aria-label="Tabela com rolagem horizontal quando necessário">
+            <table>
+              <caption>Elemento, finalidade e exemplo</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Elemento</th>
+                  <th scope="col">Finalidade</th>
+                  <th scope="col">Exemplo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><code>article</code></th>
+                  <td>Conteúdo independente</td>
+                  <td>Post ou notícia</td>
+                </tr>
+                <tr>
+                  <th scope="row"><code>figure</code></th>
+                  <td>Mídia com legenda</td>
+                  <td>Imagem técnica</td>
+                </tr>
+                <tr>
+                  <th scope="row"><code>label</code></th>
+                  <td>Identifica um campo</td>
+                  <td>Nome e e-mail</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Exemplo reconstruído para estudo. Nenhum dado do formulário é enviado.</p>
+    </footer>
+  </body>
+</html>

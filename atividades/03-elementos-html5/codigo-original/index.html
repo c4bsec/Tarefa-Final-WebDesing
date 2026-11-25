@@ -1,0 +1,872 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade HTML5</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Atividade Prática de HTML5</h1>
+
+        <p>
+            Página desenvolvida para praticar os principais elementos do HTML5.
+        </p>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <table border="1" width="100%" cellpadding="10" cellspacing="0">
+
+            <tr>
+                <th colspan="2">
+                    <h2>1. Introdução</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td width="20%">
+                    <strong>Descrição</strong>
+                </td>
+
+                <td>
+                    <p id="introducao">
+                        Esta página apresenta exemplos de imagens, vídeo,
+                        áudio, formulário, links, listas, tabelas,
+                        IDs, classes e divs utilizando HTML5.
+                    </p>
+
+                    <p class="destaque">
+                        Este é o primeiro parágrafo com a classe destaque.
+                    </p>
+
+                    <p class="destaque">
+                        Este é o segundo parágrafo com a classe destaque.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>2. Imagens</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Imagem 1</strong>
+                </td>
+
+                <td>
+                    <img
+                        src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300"
+                        alt="Pães sobre uma mesa"
+                        width="220"
+                        height="140"
+                    >
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Imagem 2</strong>
+                </td>
+
+                <td>
+                    <img
+                        src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=300"
+                        alt="Pão artesanal"
+                        width="220"
+                        height="140"
+                    >
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Imagem 3</strong>
+                </td>
+
+                <td>
+                    <img
+                        src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=250"
+                        alt="Pães variados"
+                    >
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>3. Vídeo</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Vídeo</strong>
+                </td>
+
+                <td>
+                    <video
+                        controls
+                        width="320"
+                        poster="https://wallpapercat.com/w/full/6/9/7/1641028-1920x1080-desktop-1080p-fullmetal-alchemist-anime-background.jpg"
+                    >
+                        <source
+                            src="Video\Fullmetal Alchemist Brotherhood - Opening 1.mp4"
+                            type="video/mp4"
+                            alt="Fullmetal"
+                        >
+
+                        Seu navegador não suporta vídeo.
+                    </video>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>4. Áudio</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Áudio</strong>
+                </td>
+
+                <td>
+                    <audio controls>
+    <source src="audio\Guns N' Roses - Sweet Child O' Mine.mp3" type="audio/mpeg">
+    <source src="audio\Guns N' Roses - Sweet Child O' Mine.ogg" type="audio/ogg">
+    Seu navegador não suporta o elemento de áudio.
+</audio>
+
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>5. Formulário</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Dados</strong>
+                </td>
+
+                <td>
+
+                    <form action="#" method="post">
+
+                        <label for="nome">
+                            <strong>Nome:</strong>
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            required
+                        >
+
+                        <br><br>
+
+                        <label for="email">
+                            <strong>E-mail:</strong>
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+
+                        <br><br>
+
+                        <label for="mensagem">
+                            <strong>Mensagem:</strong>
+                        </label>
+
+                        <br>
+
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="5"
+                            cols="35"
+                        ></textarea>
+
+                        <br><br>
+
+                        <button type="submit">
+                            Enviar
+                        </button>
+
+                    </form>
+
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>6. Links</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Link simples</strong>
+                </td>
+
+                <td>
+                    <a href="https://www.google.com">
+                        Acessar o Google
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Imagem clicável</strong>
+                </td>
+
+                <td>
+                    <a href="https://www.google.com">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=200"
+                            alt="Pão clicável"
+                            width="140"
+                            height="90"
+                        >
+
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Nova aba</strong>
+                </td>
+
+                <td>
+                    <a
+                        href="https://www.google.com"
+                        target="_blank"
+                    >
+                        Abrir Google em uma nova aba
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>7. Listas</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Lista ordenada</strong>
+                </td>
+
+                <td>
+                    <ol>
+                        <li>Passo 1</li>
+                        <li>Passo 2</li>
+                        <li>Passo 3</li>
+                    </ol>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Lista não ordenada</strong>
+                </td>
+
+                <td>
+                    <ul>
+                        <li>Item A</li>
+                        <li>Item B</li>
+                        <li>Item C</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>8. Tabela</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Exemplo</strong>
+                </td>
+
+                <td>
+
+                    <table border="1" cellpadding="8" cellspacing="0">
+
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Idade</th>
+                                <th>Cidade</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>João</td>
+                                <td>20</td>
+                                <td>Sorocaba</td>
+                            </tr>
+
+                            <tr>
+                                <td>Maria</td>
+                                <td>22</td>
+                                <td>São Paulo</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>9. IDs e Classes</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>ID</strong>
+                </td>
+
+                <td>
+                    <p>
+                        O parágrafo inicial utiliza
+                        <strong>id="introducao"</strong>.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Classe</strong>
+                </td>
+
+                <td>
+                    <p class="destaque">
+                        Primeiro parágrafo com class="destaque".
+                    </p>
+
+                    <p class="destaque">
+                        Segundo parágrafo com class="destaque".
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>10. Div como contêiner</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Div</strong>
+                </td>
+
+                <td>
+
+                    <div class="container-explicacao">
+
+                        <h3>Sobre o HTML5</h3>
+
+                        <p>
+                            HTML5 é utilizado para organizar
+                            e estruturar páginas web.
+                        </p>
+
+                        <p>
+                            Uma página HTML pode conter textos,
+                            imagens, vídeos, áudios, formulários,
+                            links, listas e tabelas.
+                        </p>
+
+                    </div>
+
+                </td>
+            </tr>
+
+        </table>
+
+    </main>
+
+    <hr>
+
+    <footer>
+
+        <p>
+            <strong>Atividade Prática de HTML5</strong>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade HTML5</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Atividade Prática de HTML5</h1>
+
+        <p>
+            Página desenvolvida para praticar os principais elementos do HTML5.
+        </p>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <table border="1" width="100%" cellpadding="10" cellspacing="0">
+
+            <tr>
+                <th colspan="2">
+                    <h2>1. Introdução</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td width="20%">
+                    <strong>Descrição</strong>
+                </td>
+
+                <td>
+                    <p id="introducao">
+                        Esta página apresenta exemplos de imagens, vídeo,
+                        áudio, formulário, links, listas, tabelas,
+                        IDs, classes e divs utilizando HTML5.
+                    </p>
+
+                    <p class="destaque">
+                        Este é o primeiro parágrafo com a classe destaque.
+                    </p>
+
+                    <p class="destaque">
+                        Este é o segundo parágrafo com a classe destaque.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>2. Imagens</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Imagem 1</strong>
+                </td>
+
+                <td>
+                    <img
+                        src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300"
+                        alt="Pães sobre uma mesa"
+                        width="220"
+                        height="140"
+                    >
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Imagem 2</strong>
+                </td>
+
+                <td>
+                    <img
+                        src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=300"
+                        alt="Pão artesanal"
+                        width="220"
+                        height="140"
+                    >
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Imagem 3</strong>
+                </td>
+
+                <td>
+                    <img
+                        src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=250"
+                        alt="Pães variados"
+                    >
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>3. Vídeo</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Vídeo</strong>
+                </td>
+
+                <td>
+                    <video
+                        controls
+                        width="320"
+                        poster="https://wallpapercat.com/w/full/6/9/7/1641028-1920x1080-desktop-1080p-fullmetal-alchemist-anime-background.jpg"
+                    >
+                        <source
+                            src="Video\Fullmetal Alchemist Brotherhood - Opening 1.mp4"
+                            type="video/mp4"
+                            alt="Fullmetal"
+                        >
+
+                        Seu navegador não suporta vídeo.
+                    </video>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>4. Áudio</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Áudio</strong>
+                </td>
+
+                <td>
+                    <audio controls>
+    <source src="audio\Guns N' Roses - Sweet Child O' Mine.mp3" type="audio/mpeg">
+    <source src="audio\Guns N' Roses - Sweet Child O' Mine.ogg" type="audio/ogg">
+    Seu navegador não suporta o elemento de áudio.
+</audio>
+
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>5. Formulário</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Dados</strong>
+                </td>
+
+                <td>
+
+                    <form action="#" method="post">
+
+                        <label for="nome">
+                            <strong>Nome:</strong>
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            required
+                        >
+
+                        <br><br>
+
+                        <label for="email">
+                            <strong>E-mail:</strong>
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+
+                        <br><br>
+
+                        <label for="mensagem">
+                            <strong>Mensagem:</strong>
+                        </label>
+
+                        <br>
+
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="5"
+                            cols="35"
+                        ></textarea>
+
+                        <br><br>
+
+                        <button type="submit">
+                            Enviar
+                        </button>
+
+                    </form>
+
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>6. Links</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Link simples</strong>
+                </td>
+
+                <td>
+                    <a href="https://www.google.com">
+                        Acessar o Google
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Imagem clicável</strong>
+                </td>
+
+                <td>
+                    <a href="https://www.google.com">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=200"
+                            alt="Pão clicável"
+                            width="140"
+                            height="90"
+                        >
+
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Nova aba</strong>
+                </td>
+
+                <td>
+                    <a
+                        href="https://www.google.com"
+                        target="_blank"
+                    >
+                        Abrir Google em uma nova aba
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>7. Listas</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Lista ordenada</strong>
+                </td>
+
+                <td>
+                    <ol>
+                        <li>Passo 1</li>
+                        <li>Passo 2</li>
+                        <li>Passo 3</li>
+                    </ol>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Lista não ordenada</strong>
+                </td>
+
+                <td>
+                    <ul>
+                        <li>Item A</li>
+                        <li>Item B</li>
+                        <li>Item C</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>8. Tabela</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Exemplo</strong>
+                </td>
+
+                <td>
+
+                    <table border="1" cellpadding="8" cellspacing="0">
+
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Idade</th>
+                                <th>Cidade</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>João</td>
+                                <td>20</td>
+                                <td>Sorocaba</td>
+                            </tr>
+
+                            <tr>
+                                <td>Maria</td>
+                                <td>22</td>
+                                <td>São Paulo</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>9. IDs e Classes</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>ID</strong>
+                </td>
+
+                <td>
+                    <p>
+                        O parágrafo inicial utiliza
+                        <strong>id="introducao"</strong>.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Classe</strong>
+                </td>
+
+                <td>
+                    <p class="destaque">
+                        Primeiro parágrafo com class="destaque".
+                    </p>
+
+                    <p class="destaque">
+                        Segundo parágrafo com class="destaque".
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <h2>10. Div como contêiner</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Div</strong>
+                </td>
+
+                <td>
+
+                    <div class="container-explicacao">
+
+                        <h3>Sobre o HTML5</h3>
+
+                        <p>
+                            HTML5 é utilizado para organizar
+                            e estruturar páginas web.
+                        </p>
+
+                        <p>
+                            Uma página HTML pode conter textos,
+                            imagens, vídeos, áudios, formulários,
+                            links, listas e tabelas.
+                        </p>
+
+                    </div>
+
+                </td>
+            </tr>
+
+        </table>
+
+    </main>
+
+    <hr>
+
+    <footer>
+
+        <p>
+            <strong>Atividade Prática de HTML5</strong>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

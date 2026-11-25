@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Vídeo de terceiros omitido</title>
+  <desc id="desc">Pôster informando que a mídia original não foi redistribuída.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123b63"/>
+      <stop offset="1" stop-color="#176b5b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="640" cy="290" r="92" fill="#ffffff" fill-opacity=".15"/>
+  <path d="m615 240 90 50-90 50z" fill="#ffffff"/>
+  <text x="640" y="455" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="52" font-weight="800">Mídia original omitida</text>
+  <text x="640" y="520" text-anchor="middle" fill="#dff3ec" font-family="system-ui, sans-serif" font-size="28">Substitua por um vídeo próprio ou licenciado.</text>
+</svg>

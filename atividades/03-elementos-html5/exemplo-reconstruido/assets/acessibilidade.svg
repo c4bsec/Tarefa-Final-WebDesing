@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Foco visível e navegação por teclado</title>
+  <desc id="desc">Um botão com contorno de foco e uma tecla Tab ao lado.</desc>
+  <rect width="800" height="450" fill="#fff4ef"/>
+  <rect x="180" y="152" width="300" height="126" rx="28" fill="#176b5b" stroke="#ffb703" stroke-width="14"/>
+  <text x="252" y="230" fill="#ffffff" font-family="system-ui, sans-serif" font-size="42" font-weight="800">BOTÃO</text>
+  <rect x="540" y="166" width="110" height="92" rx="18" fill="#17212b"/>
+  <text x="566" y="224" fill="#ffffff" font-family="ui-monospace, monospace" font-size="32" font-weight="800">Tab</text>
+  <path d="M480 215h54" stroke="#d95f4b" stroke-width="10" stroke-linecap="round"/>
+  <path d="m520 190 25 25-25 25" fill="none" stroke="#d95f4b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

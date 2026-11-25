@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Exemplo reconstruído da primeira atividade de Web Design.">
+    <title>Primeiros passos - Web Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <header class="topo">
+      <div>
+        <p class="rotulo">FACENS · Web Design</p>
+        <h1>Meu primeiro projeto web</h1>
+        <p>HTML organiza, CSS apresenta e JavaScript acrescenta comportamento.</p>
+      </div>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="navegacao">
+        Menu
+      </button>
+      <nav id="navegacao" aria-label="Navegação principal">
+        <a href="#arquivos">Arquivos</a>
+        <a href="#fluxo">Fluxo Git</a>
+        <a href="#interacao">Interação</a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero">
+        <div>
+          <p class="rotulo">Atividade reconstruída</p>
+          <h2>Uma base simples, organizada e segura</h2>
+          <p>
+            Este exemplo refaz a estrutura descrita no relatório sem reutilizar credenciais,
+            registros acadêmicos ou dados pessoais.
+          </p>
+          <a class="acao" href="#arquivos">Explorar o projeto</a>
+        </div>
+        <div class="ilustracao" aria-hidden="true">
+          <span>&lt;html&gt;</span>
+          <span>{ css }</span>
+          <span>js()</span>
+        </div>
+      </section>
+
+      <section id="arquivos" class="secao">
+        <p class="rotulo">Separação de responsabilidades</p>
+        <h2>Três arquivos, três funções</h2>
+        <div class="grade">
+          <article>
+            <h3>index.html</h3>
+            <p>Define o significado e a ordem do conteúdo.</p>
+          </article>
+          <article>
+            <h3>style.css</h3>
+            <p>Controla cores, espaçamentos, tipografia e responsividade.</p>
+          </article>
+          <article>
+            <h3>script.js</h3>
+            <p>Registra eventos e altera o estado da interface.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="fluxo" class="secao painel">
+        <div>
+          <p class="rotulo">Versionamento</p>
+          <h2>Fluxo Git essencial</h2>
+        </div>
+        <ol>
+          <li><code>git status</code> para revisar alterações.</li>
+          <li><code>git add .</code> para preparar os arquivos.</li>
+          <li><code>git commit -m "mensagem"</code> para registrar a versão.</li>
+          <li><code>git push origin main</code> para enviar ao repositório autorizado.</li>
+        </ol>
+      </section>
+
+      <section id="interacao" class="secao">
+        <p class="rotulo">JavaScript</p>
+        <h2>Teste a interação</h2>
+        <p id="mensagem" aria-live="polite">Nenhuma ação registrada.</p>
+        <button class="acao" type="button" data-confirmar>Confirmar aprendizado</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Exemplo didático reconstruído para o portfólio de Web Design.</p>
+    </footer>
+  </body>
+</html>

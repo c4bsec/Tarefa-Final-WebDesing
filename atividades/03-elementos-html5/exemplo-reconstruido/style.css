@@ -1,0 +1,197 @@
+:root {
+  --tinta: #17212b;
+  --muted: #536271;
+  --papel: #fbfaf6;
+  --cartao: #ffffff;
+  --verde: #176b5b;
+  --verde-claro: #dff3ec;
+  --coral: #d95f4b;
+  --linha: #dce2df;
+  --sombra: 0 16px 50px rgba(23, 33, 43, 0.1);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: var(--tinta);
+  background: var(--papel);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.65;
+}
+
+body.contraste {
+  --tinta: #ffffff;
+  --muted: #e5e7eb;
+  --papel: #101214;
+  --cartao: #1b1f24;
+  --verde: #65e6c6;
+  --verde-claro: #183a32;
+  --coral: #ff9e8e;
+  --linha: #47515b;
+}
+
+a { color: inherit; }
+
+:focus-visible {
+  outline: 3px solid #ffb703;
+  outline-offset: 3px;
+}
+
+.pular {
+  position: fixed;
+  left: 1rem;
+  top: -5rem;
+  z-index: 20;
+  padding: 0.7rem 1rem;
+  color: #fff;
+  background: #111;
+}
+
+.pular:focus { top: 1rem; }
+
+.cabecalho, .navegacao, main, footer {
+  width: min(72rem, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: end;
+  padding: 3rem 0 1.5rem;
+}
+
+.cabecalho h1 {
+  margin: 0.2rem 0 0.5rem;
+  font: 800 clamp(2.2rem, 7vw, 4.8rem)/0.98 Georgia, serif;
+}
+
+.cabecalho p { max-width: 60ch; margin-block: 0.4rem; }
+
+.sobrelinha {
+  margin: 0;
+  color: var(--verde);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.tema, form button {
+  padding: 0.75rem 1rem;
+  color: #fff;
+  background: #176b5b;
+  border: 0;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.navegacao {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.6rem;
+  overflow-x: auto;
+  background: var(--cartao);
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  box-shadow: var(--sombra);
+}
+
+.navegacao a {
+  flex: 0 0 auto;
+  padding: 0.55rem 0.85rem;
+  text-decoration: none;
+  border-radius: 999px;
+}
+
+.navegacao a:hover { background: var(--verde-claro); }
+
+main section { padding: clamp(3rem, 7vw, 6rem) 0; }
+
+section h2 {
+  max-width: 18ch;
+  margin: 0.25rem 0 1.5rem;
+  font: 800 clamp(2rem, 5vw, 3.8rem)/1.05 Georgia, serif;
+}
+
+.introducao {
+  display: grid;
+  gap: 1rem;
+  align-items: end;
+}
+
+.introducao aside, article, form, figure, .tabela-wrapper {
+  background: var(--cartao);
+  border: 1px solid var(--linha);
+  border-radius: 1rem;
+  box-shadow: var(--sombra);
+}
+
+.introducao aside { padding: 1.4rem; }
+.introducao aside p { color: var(--muted); }
+
+.grade-imagens, .grade-midia, .grade-dados {
+  display: grid;
+  gap: 1rem;
+}
+
+figure { margin: 0; overflow: hidden; }
+figure img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+figcaption { padding: 1rem; color: var(--muted); }
+
+article { padding: 1.25rem; }
+article h3 { margin-top: 0; }
+
+audio, video { width: 100%; }
+video { aspect-ratio: 16 / 9; background: #101214; }
+
+form { display: grid; gap: 1rem; padding: 1.25rem; }
+.campos { display: grid; gap: 1rem; }
+label { display: grid; gap: 0.35rem; font-weight: 750; }
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  color: var(--tinta);
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: 0.55rem;
+  font: inherit;
+}
+
+textarea { resize: vertical; }
+form button { width: fit-content; border-radius: 0.6rem; }
+.retorno { min-height: 1.6em; margin: 0; color: var(--verde); font-weight: 800; }
+.retorno.erro { color: var(--coral); }
+
+.tabela-wrapper { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 36rem; }
+caption { padding: 1rem; text-align: left; font-weight: 800; }
+th, td { padding: 0.8rem 1rem; border-top: 1px solid var(--linha); text-align: left; }
+thead { background: var(--verde-claro); }
+code { color: var(--verde); font-weight: 800; }
+
+footer {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  color: var(--muted);
+  border-top: 1px solid var(--linha);
+}
+
+@media (min-width: 48rem) {
+  .introducao { grid-template-columns: 1.3fr 0.7fr; }
+  .grade-imagens, .grade-midia { grid-template-columns: repeat(2, 1fr); }
+  .campos { grid-template-columns: repeat(2, 1fr); }
+  .grade-dados { grid-template-columns: 0.7fr 1.3fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

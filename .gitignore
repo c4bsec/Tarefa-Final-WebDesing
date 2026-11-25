@@ -4,11 +4,20 @@
 *.exe
 *.msi
 *.deb
-*.zip
 *.tgz
 *.log
 *.log.*
 *.sig
 
-pkg/
-src/
+.env
+.env.*
+!.env.example
+
+node_modules/
+vendor/
+.DS_Store
+Thumbs.db
+
+# Os pacotes ZIP fazem parte da entrega acadêmica.
+*.zip
+!pacotes/*.zip
