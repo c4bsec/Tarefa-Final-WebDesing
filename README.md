@@ -21,7 +21,7 @@ Portfólio acadêmico do Grupo A com as atividades práticas, relatórios, códi
 - [JavaScript, eventos e manipulação do DOM](materiais/03-javascript-dom.md)
 - [Git e GitHub com autenticação segura](materiais/04-git-github.md)
 - [PHP, Front Controller e infraestrutura web](materiais/05-php-infraestrutura.md)
-- [Exercícios de revisão](exercicios/README.md)
+- [Exercícios de revisão](exercicios/README.md) — com [10 soluções HTML executáveis](exercicios/resolvidos/index.html)
 
 ## Como executar
 
@@ -39,7 +39,7 @@ As atividades 4 e 5 usam PHP. O código original inclui instruções próprias e
 
 ```text
 atividades/   códigos originais e reconstruções identificadas
-exercicios/   roteiro de fixação e respostas esperadas
+exercicios/   roteiro de fixação e 10 soluções HTML executáveis
 materiais/    resumos dos principais assuntos do semestre
 pacotes/      ZIP individual de cada atividade e pacote completo
 relatorios/   cinco PDFs em versão pública sanitizada

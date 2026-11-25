@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>01 · Estrutura HTML5 resolvida</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header"><div class="header-inner"><p class="eyebrow">Exercício resolvido 01</p><h1>Estrutura HTML5</h1><p class="lead">Uma página com regiões semânticas, navegação nomeada e hierarquia lógica.</p><nav class="breadcrumb" aria-label="Navegação estrutural"><a href="index.html">Exercícios resolvidos</a><span>/</span><span aria-current="page">Estrutura HTML5</span></nav></div></header>
+
+  <main class="page stack" id="conteudo">
+    <section class="panel solution-note"><h2>Resultado</h2><p><strong>Resolvido:</strong> há um único elemento <code>main</code>, link de salto, <code>header</code>, <code>nav</code>, duas seções, artigo, conteúdo complementar e rodapé.</p></section>
+
+    <section class="panel" aria-labelledby="demonstracao"><h2 id="demonstracao">Demonstração semântica</h2>
+      <div class="demo">
+        <header class="demo-region"><strong>Cabeçalho do portal</strong><nav class="demo-nav" aria-label="Menu da demonstração"><ul><li><a href="#noticias">Notícias</a></li><li><a href="#aprenda">Aprenda</a></li></ul></nav></header>
+        <div class="demo-layout">
+          <div>
+            <section class="demo-region" id="noticias"><h3>Notícias da disciplina</h3><article><h4>Semântica melhora a compreensão</h4><p>Elementos com significado ajudam pessoas, navegadores e tecnologias assistivas a interpretar a página.</p></article></section>
+            <section class="demo-region" id="aprenda"><h3>Aprenda na prática</h3><p>Use títulos em ordem lógica e escolha elementos pelo significado, não pela aparência.</p></section>
+          </div>
+          <aside class="demo-region" aria-labelledby="complemento"><h3 id="complemento">Conteúdo complementar</h3><p>O elemento <code>aside</code> reúne informações relacionadas, mas não essenciais ao fluxo principal.</p></aside>
+        </div>
+        <footer class="demo-region"><strong>Rodapé da demonstração</strong></footer>
+      </div>
+    </section>
+
+    <section class="panel"><h2>Trecho principal</h2><pre class="code-block"><code>&lt;body&gt;
+  &lt;a href="#conteudo"&gt;Pular para o conteúdo&lt;/a&gt;
+  &lt;header&gt;...&lt;/header&gt;
+  &lt;main id="conteudo"&gt;
+    &lt;section&gt;&lt;article&gt;...&lt;/article&gt;&lt;/section&gt;
+    &lt;section&gt;...&lt;/section&gt;
+    &lt;aside&gt;...&lt;/aside&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;...&lt;/footer&gt;
+&lt;/body&gt;</code></pre></section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><p>Solução 01 concluída</p><a href="02-navegacao-interna.html">Próximo exercício →</a></div></footer>
+</body>
+</html>

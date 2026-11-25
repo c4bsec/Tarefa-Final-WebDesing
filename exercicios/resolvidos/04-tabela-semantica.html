@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>04 · Tabela semântica resolvida</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header"><div class="header-inner"><p class="eyebrow">Exercício resolvido 04</p><h1>Tabela semântica</h1><p class="lead">Dados tabulares com legenda, cabeçalhos associados e rolagem em telas pequenas.</p><nav class="breadcrumb" aria-label="Navegação estrutural"><a href="index.html">Exercícios resolvidos</a><span>/</span><span aria-current="page">Tabela</span></nav></div></header>
+  <main class="page stack" id="conteudo">
+    <section class="panel solution-note"><h2>Resultado</h2><p><strong>Resolvido:</strong> colunas usam <code>scope="col"</code>, linhas usam <code>scope="row"</code> e o contêiner permite rolagem horizontal.</p></section>
+    <section class="panel"><h2>Comparativo</h2><div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de tecnologias, rolável horizontalmente">
+      <table><caption>Tecnologias essenciais da Web</caption><thead><tr><th scope="col">Tecnologia</th><th scope="col">Responsabilidade</th><th scope="col">Exemplo</th></tr></thead><tbody>
+        <tr><th scope="row">HTML</th><td>Estrutura e significado do conteúdo</td><td><code>&lt;main&gt;</code></td></tr>
+        <tr><th scope="row">CSS</th><td>Apresentação, layout e responsividade</td><td><code>display: grid</code></td></tr>
+        <tr><th scope="row">JavaScript</th><td>Comportamento e interação</td><td><code>addEventListener()</code></td></tr>
+      </tbody></table>
+    </div></section>
+    <section class="panel"><h2>Estrutura usada</h2><pre class="code-block"><code>&lt;table&gt;
+  &lt;caption&gt;Tecnologias essenciais da Web&lt;/caption&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Tecnologia&lt;/th&gt;...&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;th scope="row"&gt;HTML&lt;/th&gt;...&lt;/tr&gt;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre></section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><a href="03-formulario-acessivel.html">← Anterior</a><a href="05-layout-responsivo.html">Próximo exercício →</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>09 · Front Controller resolvido</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header"><div class="header-inner"><p class="eyebrow">Exercício resolvido 09</p><h1>Front Controller</h1><p class="lead">O caminho completo de uma requisição em uma aplicação com Nginx e PHP-FPM.</p><nav class="breadcrumb" aria-label="Navegação estrutural"><a href="index.html">Exercícios resolvidos</a><span>/</span><span aria-current="page">Front Controller</span></nav></div></header>
+  <main class="page stack" id="conteudo">
+    <section class="panel solution-note"><h2>Resposta resolvida</h2><p><strong>Fluxo:</strong> navegador → Nginx → <code>public/index.php</code> → roteamento e regra de negócio → view → resposta HTTP.</p></section>
+    <section class="panel"><h2>Fluxo da requisição</h2><ol class="flow">
+      <li><strong>Navegador</strong><span>envia a requisição HTTP</span></li>
+      <li><strong>Nginx</strong><span>entrega arquivos ou encaminha ao PHP</span></li>
+      <li><strong>Front Controller</strong><span><code>public/index.php</code> centraliza a entrada</span></li>
+      <li><strong>Aplicação</strong><span>roteia, valida e executa regras</span></li>
+      <li><strong>View</strong><span>gera a resposta HTML</span></li>
+    </ol></section>
+    <section class="panel"><h2>Exemplo simplificado</h2><pre class="code-block"><code>&lt;?php
+require __DIR__ . '/../src/bootstrap.php';
+
+$path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+
+if ($path === '/') {
+    $products = $store-&gt;products();
+    require __DIR__ . '/../views/home.php';
+    exit;
+}
+
+http_response_code(404);
+require __DIR__ . '/../views/errors/status.php';</code></pre></section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><a href="08-git-seguro.html">← Anterior</a><a href="10-auditoria-privacidade.html">Próximo exercício →</a></div></footer>
+</body>
+</html>

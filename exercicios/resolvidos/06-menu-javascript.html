@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>06 · Menu com JavaScript resolvido</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="exercises.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header"><div class="header-inner"><p class="eyebrow">Exercício resolvido 06</p><h1>Menu com JavaScript</h1><p class="lead">Controle de abertura sincronizado com ARIA, fechamento por link e tecla Escape.</p><nav class="breadcrumb" aria-label="Navegação estrutural"><a href="index.html">Exercícios resolvidos</a><span>/</span><span aria-current="page">Menu JavaScript</span></nav></div></header>
+  <main class="page stack" id="conteudo">
+    <section class="panel solution-note"><h2>Resultado</h2><p><strong>Resolvido:</strong> o botão controla a navegação e mantém <code>aria-expanded</code> coerente com o estado visível.</p></section>
+    <section class="panel"><h2>Demonstração interativa</h2><div class="demo menu-demo">
+      <div><button class="button" type="button" aria-expanded="false" aria-controls="menu-exemplo" data-menu-button>Abrir menu</button></div>
+      <nav class="menu-panel" id="menu-exemplo" aria-label="Menu de exemplo"><ul><li><a href="#inicio-demo">Início</a></li><li><a href="#conteudo-demo">Conteúdo</a></li><li><a href="#contato-demo">Contato</a></li></ul></nav>
+      <div class="demo-region" id="inicio-demo"><strong>Início da demonstração</strong></div>
+      <div class="demo-region" id="conteudo-demo"><strong>Conteúdo da demonstração</strong></div>
+      <div class="demo-region" id="contato-demo"><strong>Contato da demonstração</strong></div>
+    </div></section>
+    <section class="panel"><h2>Lógica principal</h2><pre class="code-block"><code>button.addEventListener("click", () =&gt; {
+  const aberto = button.getAttribute("aria-expanded") !== "true";
+  button.setAttribute("aria-expanded", String(aberto));
+  menu.hidden = !aberto;
+});</code></pre></section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><a href="05-layout-responsivo.html">← Anterior</a><a href="07-design-tokens.html">Próximo exercício →</a></div></footer>
+</body>
+</html>

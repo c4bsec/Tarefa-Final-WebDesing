@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>10 · Auditoria de privacidade resolvida</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="exercises.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header"><div class="header-inner"><p class="eyebrow">Exercício resolvido 10</p><h1>Auditoria de privacidade</h1><p class="lead">Checklist executável para revisar um repositório antes da publicação.</p><nav class="breadcrumb" aria-label="Navegação estrutural"><a href="index.html">Exercícios resolvidos</a><span>/</span><span aria-current="page">Auditoria</span></nav></div></header>
+  <main class="page stack" id="conteudo">
+    <section class="panel solution-note"><h2>Resposta resolvida</h2><p><strong>Se um token foi publicado:</strong> revogue-o imediatamente, gere outro quando necessário, remova o segredo do conteúdo e revise todo o histórico. Apagar apenas o arquivo atual não elimina versões antigas.</p></section>
+    <section class="panel"><h2>Checklist antes de publicar</h2><ul class="checklist" data-privacy-checklist>
+      <li><label><input type="checkbox"><span>Revisei documentos, imagens e PDFs em busca de RAs e dados pessoais.</span></label></li>
+      <li><label><input type="checkbox"><span>Procurei tokens, senhas, chaves privadas e credenciais em todos os arquivos.</span></label></li>
+      <li><label><input type="checkbox"><span>Confirmei que arquivos <code>.env</code> reais estão ignorados.</span></label></li>
+      <li><label><input type="checkbox"><span>Verifiquei o histórico e os commits que serão publicados.</span></label></li>
+      <li><label><input type="checkbox"><span>Validei que os exemplos usam apenas valores fictícios.</span></label></li>
+    </ul><p class="status-message" data-checklist-status aria-live="polite"></p></section>
+    <section class="panel"><h2>Plano de resposta a incidente</h2><ol><li>Revogar o segredo no serviço de origem.</li><li>Remover o dado do repositório e do histórico quando necessário.</li><li>Atualizar sistemas que dependiam da credencial.</li><li>Revisar registros de acesso e documentar o incidente.</li></ol></section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><a href="09-front-controller.html">← Anterior</a><a href="index.html">Voltar a todos os exercícios →</a></div></footer>
+</body>
+</html>

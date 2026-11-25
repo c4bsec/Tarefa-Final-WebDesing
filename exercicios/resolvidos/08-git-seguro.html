@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>08 · Git seguro resolvido</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header"><div class="header-inner"><p class="eyebrow">Exercício resolvido 08</p><h1>Git seguro</h1><p class="lead">Fluxo completo para revisar e publicar mudanças sem colocar credenciais na URL.</p><nav class="breadcrumb" aria-label="Navegação estrutural"><a href="index.html">Exercícios resolvidos</a><span>/</span><span aria-current="page">Git seguro</span></nav></div></header>
+  <main class="page stack" id="conteudo">
+    <section class="panel solution-note"><h2>Resposta resolvida</h2><p><strong>Use autenticação oficial:</strong> Git Credential Manager ou SSH. O endereço remoto não deve conter usuário, senha ou token.</p></section>
+    <section class="panel"><h2>Sequência correta</h2><pre class="code-block"><code># 1. Conferir as alterações
+git status
+git diff
+
+# 2. Preparar e registrar
+git add .
+git commit -m "Resolve exercícios de Web Design"
+
+# 3. Atualizar e publicar
+git pull --rebase origin main
+git push origin main</code></pre></section>
+    <section class="grid" aria-label="Cuidados de segurança">
+      <article class="exercise-card"><span class="number">✓</span><h2>Remoto limpo</h2><p>Use somente <code>https://github.com/organizacao/projeto.git</code> ou uma URL SSH.</p></article>
+      <article class="exercise-card"><span class="number">✓</span><h2>Segredos ignorados</h2><p>Mantenha <code>.env</code>, chaves e arquivos locais fora do versionamento.</p></article>
+      <article class="exercise-card"><span class="number">✓</span><h2>Revisão antes do envio</h2><p>Confira o diff e procure credenciais antes de publicar.</p></article>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><a href="07-design-tokens.html">← Anterior</a><a href="09-front-controller.html">Próximo exercício →</a></div></footer>
+</body>
+</html>

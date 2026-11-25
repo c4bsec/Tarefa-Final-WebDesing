@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>05 · Layout responsivo resolvido</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header"><div class="header-inner"><p class="eyebrow">Exercício resolvido 05</p><h1>Layout responsivo</h1><p class="lead">Três cards que se reorganizam automaticamente conforme o espaço disponível.</p><nav class="breadcrumb" aria-label="Navegação estrutural"><a href="index.html">Exercícios resolvidos</a><span>/</span><span aria-current="page">Layout responsivo</span></nav></div></header>
+  <main class="page stack" id="conteudo">
+    <section class="panel solution-note"><h2>Resultado</h2><p><strong>Resolvido:</strong> o Grid usa <code>auto-fit</code> e <code>minmax</code>; em telas estreitas os cards formam uma coluna.</p></section>
+    <section class="panel"><h2>Redimensione a janela</h2><div class="responsive-cards">
+      <article class="responsive-card"><h3>HTML semântico</h3><p>Organiza o conteúdo com significado e melhora a acessibilidade.</p></article>
+      <article class="responsive-card"><h3>CSS moderno</h3><p>Cria layouts fluidos com Grid, Flexbox e propriedades customizadas.</p></article>
+      <article class="responsive-card"><h3>JavaScript</h3><p>Adiciona interações sem perder os recursos nativos do navegador.</p></article>
+    </div></section>
+    <section class="panel"><h2>CSS resolvido</h2><pre class="code-block"><code>.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 1.25rem;
+}</code></pre></section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><a href="04-tabela-semantica.html">← Anterior</a><a href="06-menu-javascript.html">Próximo exercício →</a></div></footer>
+</body>
+</html>
